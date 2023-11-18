@@ -5,7 +5,16 @@
 
 body {
     font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
     
+}
+
+.sem-link {
+    text-decoration: none;
+    color: #333; /* Pode personalizar a cor do texto conforme desejado */
 }
 
 .texto {
@@ -34,6 +43,35 @@ body {
     background-size: cover;
     animation: heartbeat 1s infinite;
 }
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    font-size: 24px;
+}
+
+#main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 15px;
+}
 
 @keyframes heartbeat {
     0%, 100% {
@@ -42,4 +80,21 @@ body {
     50% {
         transform: scale(1.2);
     }
+
+    piscar {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.piscante {
+    animation: piscar 2s infinite; /* 1s de duração, infinito número de vezes */
+}
+    
 }
